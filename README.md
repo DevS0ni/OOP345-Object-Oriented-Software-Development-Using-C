@@ -1,4 +1,4 @@
-# OOP345 - Object-Oriented Software Development Using C
+# OOP345 - Object-Oriented Software Development Using C++
 
 This repository contains all of my code programs and work which I performed in the above mentioned course.
 
