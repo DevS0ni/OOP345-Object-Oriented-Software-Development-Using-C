@@ -1,5 +1,33 @@
 # OOP345 - Object-Oriented Software Development Using C
 
+This repository contains all of my code programs and work which I performed in the above mentioned course.
+
+----------------------------------------
+Course Description
+----------------------------------------
+After successful completion of this course, it helped me to...
+```
+  * Cover the fundamental principles of computer programming, with an emphasis on problem solving strategies
+    using structured programming techniques.
+  * Land a strong foundation forming the syntactical basis for object-oriented languages such as C++, C#, and Java.
+  * Learn problem analysis, algorithm design, and program implementation.
+  * Work in a cross-platform environment
+  * Design functions using selection and iteration constructs to solve a programming task
+  * Connect functions using pass-by-value and pass-by-address semantics to assemble a complete program
+  * Design collections using arrays and structures to manage data efficiently
+  * Code algorithms using standard library functions to incorporate existing technology
+  * Stream data using standard library functions to interact with users and access persistent text
+  * Trace the execution of a procedural program to validate its correctness 
+  * Code complete programs using appropriate object and pointer types to solve programming problems
+  * Explain the purposes of procedural programming features to inform business persons
+  * Prepare programming plans using logical components to solve practical problems
+  * Execute mathematical operations accurately.
+  * Apply a systematic approach to solve problems.
+  * Use a variety of thinking skills to anticipate and solve problems.
+  * Analyze, evaluate, and apply relevant information from a variety of sources.
+  * Manage the use of time and other resources to complete projects.
+  * Take responsibility for one's own actions, decisions, and consequences.
+  * Gained a handsome knowledge on all of the topics of Intro to C Programming namely-     
 * Introduction – 8%
     * basic concepts
         * Object-Oriented paradigm
@@ -95,3 +123,36 @@
     * comparison of C++11 and C11 syntax
     * break, continue, goto
     * C++14 and C++17
+
+ ```
+
+----------------------------------------
+Technologies & Tools Used for the Course
+----------------------------------------
+```
+- Microsoft Visual Studio (Only Microsoft Windows)
+- Visual Studio Code (Mac OS & Microsoft Windows)
+- X Code (Apple's IDE - Mac OS)
+- Dev C++ (IDE for C/ C++ languages)
+- Integrated `cmd` terminal (Microsoft Windows)
+- Terminal (Mac OSX)
+- Matrix Server (a cluster of Linux CentOS servers.)
+- SSH Client (Secure Shell Script - Microsoft Windows)
+- PuTTY (Free SSH & telnet Client - Microsoft Windows)
+- WinSCP (Free Open-Source SFTP Client - Microsoft Windows)
+- FileZilla (File Transfer Client - Microsoft Windows & MacOS)
+- CyberDuck (File Transfer Client - MacOS & Microsoft Windows - alternate to WinSCP)
+- Git (Version Control System)
+- GitHub (Web-based hosting service for git repos)
+- Global Protect VPN (establishes an encrypted connection with devices off-campus to the UMD network)
+```
+----------------------------------------
+Academic Honesty/ Integrity Statement
+----------------------------------------
+```
+I declare that all the code & programs in this repository is entirely my own work.
+
+NOTE: For others, this repo can be a good reference, if someone wants to learn &
+understand the aspects of Advanced Object Oriented Programming Concepts with C++ and it's topic
+but must not copy the work completed by me or included in this repo!
+```
