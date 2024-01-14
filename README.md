@@ -7,27 +7,27 @@ Course Description
 ----------------------------------------
 After successful completion of this course, it helped me to...
 ```
-  * Cover the fundamental principles of computer programming, with an emphasis on problem solving strategies
-    using structured programming techniques.
-  * Land a strong foundation forming the syntactical basis for object-oriented languages such as C++, C#, and Java.
-  * Learn problem analysis, algorithm design, and program implementation.
-  * Work in a cross-platform environment
-  * Design functions using selection and iteration constructs to solve a programming task
-  * Connect functions using pass-by-value and pass-by-address semantics to assemble a complete program
-  * Design collections using arrays and structures to manage data efficiently
-  * Code algorithms using standard library functions to incorporate existing technology
-  * Stream data using standard library functions to interact with users and access persistent text
-  * Trace the execution of a procedural program to validate its correctness 
-  * Code complete programs using appropriate object and pointer types to solve programming problems
-  * Explain the purposes of procedural programming features to inform business persons
-  * Prepare programming plans using logical components to solve practical problems
+  * expand the skill-set in object-oriented programming and introduce threaded programming.
+  * learn to model relationships between classes using containers, inheritance hierarchies and
+    polymorphism in the C++ programming language and to write C++ programs that execute on multiple threads.
+  * Design collections of model objects using sequential containers and multi-dimensional arrays to solve a systems or business problem
+  * Create function objects and closures to customize a programming solution for a particular application
+  * Model generalization and specialization using inheritance hierarchies to minimize the duplication of code
+  * Model polymorphic behavior using interfaces, virtual functions and templates (generics) to amplify the reusability of code
+  * Implement design components using algorithms of the standard template library to utilize existing technologies
+  * Create program components of quadratic complexity to solve non-linear problems
+  * Design program components using raw pointers and pointer arithmetic to access data in program memory
+  * Design multi-tasked solutions using threading libraries to improve the performance of a program
+  * Design file stream objects to backup text and binary data for future restoration
   * Execute mathematical operations accurately.
   * Apply a systematic approach to solve problems.
   * Use a variety of thinking skills to anticipate and solve problems.
+  * Locate, select, organize, and document information using appropriate technology and information systems.
   * Analyze, evaluate, and apply relevant information from a variety of sources.
+  * Interact with others in groups or teams in ways that contribute to effective working relationships and the achievement of goals.
   * Manage the use of time and other resources to complete projects.
-  * Take responsibility for one's own actions, decisions, and consequences.
-  * Gained a handsome knowledge on all of the topics of Intro to C Programming namely-     
+
+* Gain a handsome knowledge on all of the topics of Intro to C Programming namely-     
 * Introduction – 8%
     * basic concepts
         * Object-Oriented paradigm
@@ -123,7 +123,6 @@ After successful completion of this course, it helped me to...
     * comparison of C++11 and C11 syntax
     * break, continue, goto
     * C++14 and C++17
-
  ```
 
 ----------------------------------------
