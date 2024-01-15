@@ -27,7 +27,7 @@ After successful completion of this course, it helped me to...
   * Interact with others in groups or teams in ways that contribute to effective working relationships and the achievement of goals.
   * Manage the use of time and other resources to complete projects.
 
-* Gain a handsome knowledge on all of the topics of Intro to C Programming namely-     
+* Gain a handsome knowledge on all of the topics of Object-Oriented Software Development Using C++ namely-     
 * Introduction – 8%
     * basic concepts
         * Object-Oriented paradigm
