@@ -1,0 +1,14 @@
+/*
+-----------------------------------------------------------------------------
+ Author      : Dev Soni - dasoni4@myseneca.ca
+ Student #   : 130759210
+
+ Workshop 4
+-----------------------------------------------------------------------------
+*/
+
+In this week's workshop, the focus centered on exploring various relationships between classes, specifically Composition and Aggregation. Additionally, we delved into the intricacies of working with double pointers, a concept that posed initial challenges in the ConfirmOrder module. However, with guidance, the complexities surrounding memory management within this module became clearer.
+
+The Child module exemplifies a Composition relationship, wherein it assumes responsibility for all aspects related to the Toy class. On the other hand, ConfirmOrder establishes an Aggregation relationship with Toy. In Composition, the management of object creation and deletion is integral, necessitating the copying of objects and subsequent deletion. In contrast, Aggregation does not manage the resource directly, yet both maintain ownership of the Toy** member. Crucially, in Aggregation, no copying of objects is performed, and no deletion is required.
+
+The concept of a pointer to an array of pointers posed a learning curve, requiring adaptation to this somewhat unfamiliar construct. However, beyond the specifics of working with double pointers, the most significant takeaway was an enhanced understanding of the relationships between classes and their nuanced management when dynamically allocated. This knowledge is instrumental in crafting robust and efficient solutions in scenarios involving dynamic memory allocation in C++.

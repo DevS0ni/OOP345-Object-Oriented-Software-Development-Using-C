@@ -1,0 +1,28 @@
+/*
+-----------------------------------------------------------------------------
+ Author      : Dev Soni - dasoni4@myseneca.ca
+ Student #   : 130759210
+
+ Workshop 5
+-----------------------------------------------------------------------------
+*/
+
+In this workshop, a comprehensive set of objectives was achieved, each contributing to an in-depth understanding of advanced programming concepts. The tasks included:
+
+Designing and coding a templated class that dynamically allocates and deallocates memory. While memory management presented minimal challenges, the complexity arose from comprehending that templated classes make assumptions, requiring a nuanced understanding of their behavior and the absence of 'this' in the context of types.
+
+Designing and coding a function object, which involved a deep dive into the nuances of templated classes and their operational dynamics within the Collection module.
+
+Designing and coding a lambda expression, a task that, while conceptually straightforward, prompted considerations about the practical advantages of using lambdas over regular functions.
+
+Implementing a member function capable of receiving the address of a callback function to execute, delving into the intricacies of function pointers and observers.
+
+Throwing exceptions of different types, a crucial aspect of robust error handling, and debugging in large-scale applications. The task also necessitated distinguishing between various exception types for precise handling.
+
+Particularly challenging was the Collection module, where the complexities of templated classes, memory management, and the need for operations to be supported within the Collection by Movie and Book types demanded a profound understanding.
+
+Function pointers and observers initially posed challenges but became more comprehensible as the working program was developed and examined. Lambdas, while relatively straightforward, raised considerations regarding their application compared to regular functions.
+
+Exception handling, a pivotal aspect of reliable code, was thoroughly explored, with a focus on its utility in large applications and debugging scenarios. Through research and application, a solid grasp of exception handling was achieved.
+
+In summary, this intense workshop provided a robust platform for mastering advanced programming concepts, from templated classes to function objects, lambdas, and exception handling, offering valuable insights into their practical applications.

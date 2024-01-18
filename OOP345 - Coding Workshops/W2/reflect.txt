@@ -1,0 +1,16 @@
+/*
+-----------------------------------------------------------------------------
+ Author      : Dev Soni - dasoni4@myseneca.ca
+ Student #   : 130759210
+
+ Workshop 2
+-----------------------------------------------------------------------------
+ */
+
+This workshop primarily focused on introducing the Rule of 5 as an extension of the Rule of 3 when managing dynamic resources within a class. The Rule of 5 emphasizes the importance of defining the copy assignment operator and copy constructor, in addition to the move constructor, move assignment operator, and the destructor. This comprehensive approach ensures effective memory management, mitigating the risk of memory leaks.
+
+Additionally, the workshop introduced the 'chrono' library, providing tools to measure and understand time across a codebase or program. The session not only equipped me with knowledge about employing online resources to implement library functions but also elucidated the significance of optimizing processing time through move operations, as opposed to traditional copying and assigning methods.
+
+While I had prior experience with the string class, this workshop expanded my understanding, particularly in realizing that the string class inherently manages the character array, posing initial uncertainty regarding how to treat it as a dynamic resource. Gratitude is extended to Cornel for providing clarification on this matter.
+
+The workshop underscored the exceptional efficiency gained through moving objects in memory, presenting a stark contrast to the comparatively slower processes of copying and assigning. This approach is especially advantageous when working with substantial datasets, as evidenced by the demonstration using a 10MB text file. The importance of implementing move operations becomes increasingly evident when dealing with larger databases or data files, ensuring enhanced program efficiency.

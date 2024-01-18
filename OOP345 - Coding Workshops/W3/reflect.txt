@@ -1,0 +1,16 @@
+/*
+-----------------------------------------------------------------------------
+ Author      : Dev Soni - dasoni4@myseneca.ca
+ Student #   : 130759210
+
+ Workshop 3
+-----------------------------------------------------------------------------
+*/
+
+In the Pair module, several key functions were implemented to facilitate its functionality within the broader context of templated code. The default constructor Pair() was included, alongside the boolean operator==(const Pair& P), serving the crucial purpose of comparing two pairs to determine duplicity. Additionally, std::ostream& display(std::ostream& os) const and std::ostream& operator<<(std::ostream& os, const Pair& P) were provided. These functions play a vital role in enabling Collection to appropriately display pairs.
+
+Notably, the workshop emphasized the necessity of retaining all code within the header file when utilizing templates. This arises from the fact that templated functions remain uncompiled unless explicitly used, requiring their implementation to reside in the header file. This approach ensures that the compiler generates the correct versions of functions for all the types with which they are invoked.
+
+Acknowledging the inherent complexity of class templates, the workshop posed significant challenges, particularly in contrast to function templates. The syntax, being multifaceted, demands meticulous attention. Understanding class variables within templated classes also presented a notable learning curve.
+
+Upon dedicated exploration and walkthroughs of the program, clarity emerged, and the intrinsic power of templates in programming became apparent. Recognizing that C++ extensively relies on templates, I am committed to continuous practice and experimentation to deepen my understanding and mastery of these powerful programming constructs.

@@ -1,0 +1,16 @@
+/*
+-----------------------------------------------------------------------------
+ Author      : Dev Soni - dasoni4@myseneca.ca
+ Student #   : 130759210
+
+ Workshop 1
+-----------------------------------------------------------------------------
+ */
+
+This week's workshop encompassed the utilization of command-line arguments, exploring the internal and external linkage of variables, and incorporating dynamic memory for food descriptions. Drawing from my previous exposure in OOP244 last semester, I encountered no challenges in comprehending these concepts.
+
+Command-line arguments play a pivotal role in programming, particularly in console or terminal applications. In this workshop, we adeptly passed filenames to the program, including handling an invalid filename within the main() function. Given my proficiency in command-line applications, especially in Unix environments, this proved to be a straightforward and comprehensible concept.
+
+Regarding variable linkage, two keywords, extern and static, were emphasized. Extern variables, akin to global variables, exhibit accessibility throughout the program's lifespan. Defined in a module header and instantiated in the module's implementation file, they contribute to modular code design. Static variables, on the other hand, find their definition within a function scope, with instantiation occurring only once. Particularly useful for tracking the frequency of function calls, we applied static variables in the workshop to serve as a counter for line items, incrementing with each invocation of the display function. It's noteworthy that the static and extern keywords extend beyond variables, proving versatile in their application to custom types, functions, and class members.
+
+During the enhancement of part one to incorporate dynamic memory, I initially overlooked the rule of three. Recognizing this oversight promptly, I rectified the situation, ensuring compliance with the rule of three for effective memory management.
