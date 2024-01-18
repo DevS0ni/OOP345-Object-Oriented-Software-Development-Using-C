@@ -1,0 +1,21 @@
+/*
+-----------------------------------------------------------------------------
+ Author      : Dev Soni - dasoni4@myseneca.ca
+ Student #   : 130759210
+
+ Workshop 8
+-----------------------------------------------------------------------------
+*/
+
+In transforming part 1 into a templated class, several changes were implemented. Firstly, all function definitions were relocated into the header file, adhering to the template syntax. This adjustment was necessary to ensure that multiple definitions of the same function during compilation would not lead to a compilation failure. The incorporation of header guards guarantees that templated members are created as needed, preventing duplication during compilation.
+
+Regarding the creation of a singleton without using static members, an alternative approach involves encapsulating the singleton within another class. By doing so, the outer class can manage the singleton instance, restricting its instantiation to one occurrence.
+
+Concerning the absence of copy/move operations in the Database class despite having a resource attribute (the database instance), it is not a bug. The instance is of type shared_ptr, which inherently manages memory and incorporates built-in move/copy operations. Thus, relying on the shared_ptr eliminates the need for explicit implementations of these operations.
+
+Regarding the observation that the custom constructor is called twice for the Database class, this discrepancy is attributed to the instantiation of two different types. Specifically, one type is a string, and the other is a long long. Consequently, the compiler generates distinct class template implementations for each type, resulting in the instantiation of two separate instances.
+
+
+
+
+

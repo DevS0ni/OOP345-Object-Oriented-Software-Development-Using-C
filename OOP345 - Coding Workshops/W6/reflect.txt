@@ -1,0 +1,21 @@
+/*
+-----------------------------------------------------------------------------
+ Author      : Dev Soni - dasoni4@myseneca.ca
+ Student #   : 130759210
+
+ Workshop 6
+-----------------------------------------------------------------------------
+*/
+
+In this workshop, a multifaceted set of objectives was accomplished, demonstrating a command of advanced programming concepts. Key achievements include:
+
+Managing polymorphic objects using the vector container of the STL, showcasing proficiency in utilizing containers and their iterators, specifically vectors and lists.
+
+Successfully moving dynamically allocated objects into a container, reflecting a sound understanding of resource management and the principles of object ownership.
+
+Implementing range-based iteration on objects within a container, showcasing mastery of modern C++ practices for enhanced code readability and efficiency.
+
+Demonstrating the ability to report and handle exceptions, a crucial aspect of robust error handling in larger applications, signaling an adept comprehension of exception mechanisms.
+
+Despite the considerable workload, particularly amid midterm preparations and a delayed start, the challenges were met with adept problem-solving skills. Noteworthy was the ease with which container-related tasks were addressed, highlighting a solid grasp of STL containers, vectors, lists, and iterators.
+
