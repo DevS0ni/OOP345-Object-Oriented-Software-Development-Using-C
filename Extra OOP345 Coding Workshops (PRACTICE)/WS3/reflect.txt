@@ -1,0 +1,24 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Dev Soni
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+In this workshop, The main thing I have learnt is how to use templates, such a useful thing, although I have learnt it in my last semesters, we can use any data type using just a single, same function,
+no need to overload it for every different type we may get. Actually, templates have been one of the core topics in OOP244 course, and I have learnt it thoroughly in my previous course. They are used for defining families of functions, classes, or variables that can work with various data types. Templates can have type parameters, no type parameters; template parameters of their own. Templates can also be used for function templates and class templates, allowing polymorphism and code reusability.
+
+Honestly, I found this workshop to be quite easy as compared to other workshops, since I have practiced templates all along from OOP244, thanks to Prof, Fardad Soleimanloo, however, there have been some instances I have to look back through the course notes where I felt I should have to refer especially in resolving ambiguities for calls to function templates. Moreover, rather than issues/ problems with completing the workshop, I felt one thing so weird, which I never did before in my coding journey uptil now is that all the logic is actually inside the header file instead of the source file, which is quite unusal until this point and including the implementation in the implementation file itself.
+
+Coming to the answers of the questions asked in the workshop the reason why the class objects  are defined outside the class definition is to make sure that they are properly instantiated and have only one instance shared among all the objects of the class. Moreover, on to the next question, the specialization of the smallestItem and largestItem objects for Book and a capacity of 10 has been made to provide custom handling for a specific configuration of the Collection class. In this specialization, the book's ratio() method is used to determine the smallest and largest items based on the mentioned criteria, which is page ratio. On to the last question, I guess The initialization of smallestItem and largestItem for Book and a capacity of 72 is not a necessity because the same objects are used as in the previous specialization for Book with capacity of 10. Therefore, there is no need to reinitialize them. 
+
+Also, the functions getSmallestItem and getLargestItem in the code are not considered queries because they modify the class attribute, not changing the return value each time they are called, these functions do affect the state of the class attributes. Each time an object is added to the collection using the += operator, these functions are called to potentially update the smallest and largest items.
+
+In addition of the members that I added into the Book class -  
+std::to_string()
+std::string
+std::string::operator+()
+std::string::operator+=()
+, it was necessary because for ratio Function in the Book class to calculate the ratio between the price and the number of pages, which was necessary to calculate the smallest/ largest items in Collection. Moreover, since the class overloads '<' and '>' opeators for comparison in between to the calculated ratios. At last, the definitions and implementations in this case should be included in header file because when defining the template classes, all the code must be available at compile time. 

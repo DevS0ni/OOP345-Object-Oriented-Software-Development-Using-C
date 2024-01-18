@@ -1,0 +1,29 @@
+/**********************************************************************************************************************************
+				reflect.txt
+Full Name  : Soni Dev Alpeshbhai.
+
+***********************************************************************************************************************************/
+
+For maintaining a well-organized and memory-efficient application, it is crucial to release dynamically allocated memory within the resource vector. Neglecting this 
+essential step can lead to memory leaks, which, over time, might slow down the application's performance and even cause crashes. This issue is particularly significant 
+in a workshop setting, where working with files and other resources can strain system resources. Furthermore, improper memory release can complicate debugging, as 
+errors may not become apparent immediately, making them challenging to detect and rectify.
+
+In our specific workshop scenario, effective memory deallocation is of utmost importance because the Directory class plays a critical role in managing resources within 
+its vector. This reflects a composition relationship, and to fully utilize the find() function within Directory, it's necessary to perform pointer casting. For instance, 
+within the find() function of Directory, when the RECURSIVE flag is used, it's essential to invoke the find() function of another directory. As a result, we need to cast 
+the pointer to a Directory object before initiating this operation, as illustrated in the following code snippet:
+
+result = dynamic_cast<Directory*>(m_contents[i])->find(name, flags);
+
+When deciding between using pointers or objects for storing resources, each approach has distinct advantages and considerations.
+
+Storing pointers to resources allows for managing a collection of resources with different derived types. Pointers provide control over resource lifetimes, enabling dynamic 
+allocation and deallocation. This composition relationship allows resources to be created and disposed of at different times. However, using pointers requires careful memory 
+management for the objects they point to, including memory allocation and deallocation. Vigilance is required to prevent situations where resources are destroyed while their 
+pointers are still in use, which can lead to errors and invalid pointers.
+
+In contrast, using objects directly simplifies memory management, as resources are created and destroyed automatically when they enter and exit their respective scopes, ensuring 
+there are no memory leaks. In this context, concerns about object lifetimes and memory management are alleviated. However, if the resources involve different derived classes, 
+storing them directly in the same container becomes challenging without resorting to type-specific handling. Additionally, storing objects directly may involve additional copying 
+or moving operations, depending on the collection management strategy employed.

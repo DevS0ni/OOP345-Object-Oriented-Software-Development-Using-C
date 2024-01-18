@@ -1,0 +1,24 @@
+/**********************************************************************************************************************************
+				reflect.txt
+Full Name  : Dev Soni
+
+Authenticity Declaration:
+ I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+***********************************************************************************************************************************/
+
+All STL function used in this workshop:
+
+accumulate->To sum up the number of deaths and cases in the word and per country if one is provided 
+for_each->To display all Covids in the collection and to accumulate cases and deaths.
+transform->To change the severity in each Covid in the collection to the corresponding one depending on number of deaths.
+sort->To sort the collection based on received criteria, like country.
+any_of->For function inCollection to indicate wheather there exists a country with a specified variant with more than the amount of deaths specified.
+copy_if->To copy from collection to a new list any covid statistic with more deaths than provided.
+
+If I wrote the loops myself I would have to come up with a lot more logic than exists, 
+like sort, My code would also be a lot slower than the provided algorythms.
+Genertally the algorythms provided save a lot of time coming up with logic, and are much more efficient from what I could write in such a short time.
+
+I would rewrite it so that an unsigned integer is received in place of a string, such that for example, 
+passing col.sort(0) would sort the collection based on the first member of Covid, which is country, if a number would be passed larger than number of member variables in Covid, 
+I would throw an exception that such a field does not exist.

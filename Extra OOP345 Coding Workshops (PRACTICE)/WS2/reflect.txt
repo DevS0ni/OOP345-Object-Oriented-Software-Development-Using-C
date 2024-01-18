@@ -1,0 +1,25 @@
+/**********************************************************************************************************************************
+				reflect.txt
+Full Name  : Dev Soni
+
+Authenticity Declaration:
+ I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+***********************************************************************************************************************************/
+
+
+During this workshop,  
+I had an opportunity to use the file input and output library "fstream" that I totally understood the concept of last semester.
+I learned how to quickly read data from text files and use the std::chrono library to measure time.
+
+I noticed that copying data takes longer than just moving it. This is because copying makes a new version of the data, while moving just changes where it's stored.
+The most interesting thing about this workshop was that it implemented move semantics, that improves performance and resource management by efficiently transferring the resources through rvalue, move constructors, and move assignment operators. 
+A "move()" function is not a function that actually moves a value, unlike its name. It only serves to change to rvalue, then the value changed to rvalue is moved by the move constructor I implemented.
+To be more specific on how I implemented this workshop, first of all (** This is the answer for the second question asked in reflection**) - For the AirportLog constructor, I read the file twice. Furthermore, I counted the data. then, I stored it. Even though reading it twice seems repetitive and tedious, it helps to make sure our storage space is just right.
+I also learned about two types of clocks in the chrono library. 
+ - The steady_clock is consistent and great for timing tasks. 
+ - The system_clock can change with things like daylight saving time. It's essential to pick the right one based on the requirements.
+
+ Coming on to the questions, the significant time difference between copy and move operations is due to copying the resources and moving them -
+ a deep copy of an object is made, means that a new object is created, and all the data from the source object is copied/ transferred into the newly created object. 
+ For the moving operatios of the resources, it is more efficient than copying because ownership of an object's resources is transferred to another object without duplicating the whole data.
+ Further to the next question, std::chrono::steady_clock provides a clock that represents monotonically increasing/ succeeding clock which means that it is not specific to system clock adjustments, such as adjustments for daylight saving time. However, std::chrono::system_clock represents the system's real-time clock. 

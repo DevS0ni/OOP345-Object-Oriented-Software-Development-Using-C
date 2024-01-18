@@ -1,0 +1,60 @@
+/**********************************************************************************************************************************
+				reflect.txt
+Full Name  : Dev Soni
+
+Authenticity Declaration:
+ I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+***********************************************************************************************************************************/
+
+
+This workshop involved all the topics we have learnt about the containers- sequential containers and container adapters in C++ OOP language. 
+
+-> Sequential Containers are classes which mainly deals with the collection of objects collectively of various types. We have several types of sequential container classes, including array, deque, vector and lists are one of them. The workshop and the lessons from this week also gives us some insight of some of the common operations which can be performed on these sequential containers, such as adding, removing, and accessing elements into these types of containers. We also got to know about the Container Adapters, which are classes that adapt sequential containers to operate in specific contexts, include in - stack, queue, priority_queue. We also learnt about the iterators, their types and operations which can be performed onto them - begin, end, dereferencing. Moreover, how to insert and remove elements in the iterators - Methods like insert and erase can be useful for such operatios.
+
+One thing I want to point out which I learnt as a new concept in this workshop is about - 'find_first_of' function defined in C++ standard library header. It can be used to search for the first occurrence of any element within some specific range ( specified by 2 iterators ) and at the end of its operation returns an iterator, to first matched element. For instance, in one of my files from this workshop, probably Cheese.cpp  I have used this function in a statement i.e, delim = copy.find_first_of(',') so here the function is used to search for a character which is comma (',') within a string, is used to find the first occurrence of it from the copy string, to make it simple to understand, the function is used in this code to locate and extract parts of a comma-separated string, making it easy for the program to trace the details in the Object instantiated. This workshop didn't give me much problem, to be honest, but what I mentioned earlier is what I learnt new which I did not know prior to completing this workshop. Now, coming to the questions in the reflection:
+
+- Both classes, in this workshop, CheeseShop and CheeseParty have an attribute of type const Cheese** and yet they are in different relationships with class Cheese because, by referring to the 'CheeseParty' class first, the const Cheese** is used to store an array of pointers to objects of Cheese, also responsible for managing the lifetime of the object created with regards to these classes. When I created CheeseParty and added Cheese objects to it, the CheeseParty takes ownership of the objects, and they will be destroyed when the CheeseParty is destroyed, which defines the composition relationship. On the other hand, in 'CheeseShop' class, the same attribute is used to store an array of pointers to Cheese objects, whilst not taking the ownership of such objects, merely holding referencing to Cheese objects, also responsible of managing their lifetimes remains outside of the scope of the CheeseShop class, which shows the aggregation relationship.
+
+- The difference between the implementations of move and copy functions in a composition and an aggregation with reference to the classes used in this workshop is that in composition relationship, we actually have to perform deep copying, meaning when copying or moving the Cheese objects, containing the composition relationship, we do also make copies or else take the ownership. However, in aggregation, we can limit the code with shallow copying, while not creating new copies of the Cheese objects.
+
+- Both CheeseShop and CheeseParty classes have an addCheese function, however they differ in one aspect which is that in 'CheeseParty' the function validates that the cheese which is being added in the party is already there or added before or not? Thus, avoiding any duplicates furtheron, it deep copies the current party, hence increasing the size of the array. Whilst in CheeseShop, function creates new array, deep copies the existing objects in it, further adding new object to the new array.
+
+- To implement a removeCheese() function in CheeseShop similar to the one in CheeseParty, follow the given steps, I will explain with a pseudocode:
+
+// defining the removeCheese() function in the class
+CheeseShop& CheeseShop::removeCheese()
+{
+    if (*this)
+    {
+	// Searching for an empty place within the array, if found then
+        int emptyIndex = findEmptyCheese();
+
+	// remove the object from the array....
+        if (emptyIndex >= 0)
+        {
+            // Create a new array, with one index smaller than the original one
+            const Cheese** newCheeses = new const Cheese*[m_numCheeses - 1];
+            
+            // Copy the old cheeses to the new array!! ( Deep copying of the object )
+            for (int i = 0, j = 0; i < m_numCheeses; i++)
+            {
+                if (i != emptyIndex)
+                {
+                    newCheeses[j] = m_cheeses[i];
+                    j++;
+                }
+            }
+            
+            // Clearing the old dynamic array, while assinging new one
+            delete[] m_cheeses;
+            m_cheeses = newCheeses;
+            m_numCheeses--;
+        }
+    }
+    
+    // returning the reference of the current object, at the end.
+    return *this;
+}
+
+
+
