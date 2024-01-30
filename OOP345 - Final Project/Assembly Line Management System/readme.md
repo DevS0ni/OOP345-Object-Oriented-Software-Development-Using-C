@@ -1,39 +1,12 @@
 # Project Overview
 
-The purpose of this term project is to put your C++ Object Oriented skills to practice by developing a simulation of an assembly line with any number of stations. A line with 3 Stations is illustrated in the figure below.
+The purpose of this project is to put your C++ Object Oriented skills to practice by developing a simulation of an assembly line with any number of stations. A line with 3 Stations is illustrated in the figure below.
 
 ![Assembly Line](assemblyline.jpg)
 
 The assembly line in your solution consists of a set of workstations each of which holds a set of stock items, which are specific to the station. A line manager moves customer orders along the line filling the orders at each station, as requested. Each customer order consists of a list of items that need to be filled. Each station processes a queue of orders by filling the next order in the queue if that order requests the station's item and that item is in stock. The line manager keeps moving the customer orders from station to station until all orders have been processed. Any station that has used all the items in stock cannot fill any more orders. At the end of the line orders are either completed or incomplete due to a lack of inventory at one or more stations. The simulator lists the completed orders and those that are incomplete once the line manager has finished processing all orders.
 
 The project is divided into 3 milestones to help guide you through implementation, debugging and execution. This application is more complex than any one of the workshops and it is recommended that you plan your work accordingly.
-
-
-
-## Project Deadlines
-
-The deadlines for the project's milestones are on Saturday evenings at midnight EDT (see the schedule below).
-
-
-All files that you submit (`*.h` and `*.cpp`) should contain the following comment at the top (with your information filled):
-```cpp
-// Name:
-// Seneca Student ID:
-// Seneca email:
-// Date of completion:
-//
-// I confirm that I am the only author of this file
-//   and the content was created entirely by me.
-```
-
-**Submission of a working copy of this project is mandatory!** Students who don't submit a complete working project, cannot pass this course. A project is considered complete if all three milestones have been submitted before submission closes and the implementation follows the requirements.  The late submission penalty applied to the project mark will take into consideration the date when the project becomes complete.
-
-All of your source code, including externally linked variables, should be in the `sdds` namespace. Use class declarations in header files wherever appropriate.
-
-
-
-
-
 
 # Milestone 1
 
@@ -132,82 +105,6 @@ The `Station` class has the following structure:
     - the `ID` field uses 3 characters, the `NAME` field uses `m_widthField` characters, the `QUANTITY` field uses 4 characters, the `SERIAL` field uses 6 characters; the `DESCRIPTION` has no formatting options (see the sample output for other formatting options)
     - this function terminates the printed message with an endline
 
-
-## Tester Module
-
-The tester module and the input files are included in the repository. Do not modify any of them.
-
-## Sample Output
-
-Look in the file `ms1_output.txt` for the command line necessary to start the application and the expected output.
-
-#### Submission
-
-Before the due date, upload to your matrix account the following files:
--  `Utilities.h`
--  `Utilities.cpp`
--  `Station.h`
--  `Station.cpp`
-
-From a command prompt, execute the following command:
-
-```bash
-~profname.proflastname/submit 345_ms1
-```
-
-and follow the instructions.
-
-**A successful submission does not guarantee full credit!**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Milestone #2
 
 Milestone 2 implements and tests the `CustomerOrder` module.
@@ -281,80 +178,6 @@ struct Item
     - `STATUS` is either `FILLED` or `TO BE FILLED`
     - you must use IO manipulators to format this output.
 
-
-
-## Tester Module
-
-The tester module and input files are included in the repository. Do not modify any of them.
-
-## Sample Output
-
-Look in the file `ms2_output.txt` for the command line necessary to start the application and the expected output.
-
-
-
-#### Submission
-
-Before the due date, upload to your matrix account the following files:
-- `Utilities.h`
-- `Utilities.cpp`
-- `Station.h`
-- `Station.cpp`
-- `CustomerOrder.h`
-- `CustomerOrder.cpp`
-
-From a command prompt, execute the following command:
-
-```bash
-~profname.proflastname/submit 345_ms2
-```
-
-and follow the instructions.
-
-**A successful submission does not guarantee full credit!**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Milestone 3
 
 Milestone 3 implements and tests the `Workstation` and `LineManager` modules.
@@ -401,9 +224,6 @@ The `Workstation` class includes the following additional information:
 
 - `Workstation& operator+=(CustomerOrder&& newOrder)` – moves the `CustomerOrder` referenced in parameter `newOrder` to the back of the queue.
 
-
-
-
 ## `LineManager` Module
 
 The `LineManager` class manages an assembly line of active stations and contains the following information:
@@ -432,40 +252,3 @@ The `LineManager` class manages an assembly line of active stations and contains
     - for each station on the line, attempts to move an order down the line
     - return `true` if all customer orders have been filled or cannot be filled, otherwise returns `false`.
 - `void display(std::ostream& os) const` -- this query displays all active stations on the assembly line in their current order
-
-
-## Tester Module
-
-The tester module and input files are included in the repository. Do not modify any of them.
-
-## Sample Output
-
-Look in the file `ms3_output.txt` for the command line necessary to start the application and the expected output.
-
-
-#### Submission
-
-Create a **text** file named `reflect.txt`.  Add any comments you wish to make.
-
-Before the due date, upload to your matrix account the following files:
-- `Utilities.h`
-- `Utilities.cpp`
-- `Station.h`
-- `Station.cpp`
-- `CustomerOrder.h`
-- `CustomerOrder.cpp`
-- `Workstation.h`
-- `Workstation.cpp`
-- `LineManager.h`
-- `LineManager.cpp`
-- `reflect.txt`
-
-From a command prompt, execute the following command:
-
-```bash
-~profname.proflastname/submit 345_ms3
-```
-
-and follow the instructions.
-
-**A successful submission does not guarantee full credit!**
